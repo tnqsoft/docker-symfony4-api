@@ -15,7 +15,7 @@ COPY php-fpm-pool.conf 	/usr/local/etc/php/pool.d/www.conf
 RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
 	mv composer.phar /usr/local/bin/composer
 
-RUN wget --no-check-certificate https://phar.phpunit.de/phpunit-6.5.3.phar && \
+RUN wget --no-check-certificate https://phar.phpunit.de/phpunit-7.phar && \
     mv phpunit*.phar phpunit.phar && \
     chmod +x phpunit.phar && \
     mv phpunit.phar /usr/local/bin/phpunit

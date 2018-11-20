@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78c01999-0999-4c86-a003-a49afa9ee913" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/fos_rest.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/nelmio_api_doc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/routes/dev/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/routes/nelmio_api_doc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phpcs.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Controller/DemoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/docker-symfony4-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docker-symfony4-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/php/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,31 +24,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="5" />
+          <entry key="Dockerfile" value="6" />
           <entry key="conf" value="5" />
           <entry key="env" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="ini" value="3" />
+          <entry key="ini" value="4" />
           <entry key="json" value="7" />
           <entry key="md" value="6" />
           <entry key="php" value="10" />
           <entry key="twig" value="1" />
           <entry key="yaml" value="25" />
-          <entry key="yml" value="5" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="Dockerfile" value="5" />
-          <entry key="Ini" value="3" />
+          <entry key="Dockerfile" value="6" />
+          <entry key="Ini" value="4" />
           <entry key="JSON" value="7" />
           <entry key="Markdown" value="6" />
           <entry key="PHP" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SmartyConfig" value="5" />
           <entry key="Twig" value="1" />
-          <entry key="YAML" value="30" />
+          <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -112,35 +78,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tests/Controller/DefaultControllerTest.php">
+        <entry file="file://$PROJECT_DIR$/.docker/php/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-              <folding>
-                <element signature="e#62#98#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="779">
-                <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/composer.json">
+        <entry file="file://$PROJECT_DIR$/.docker/php/php.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="376">
+              <caret line="1825" column="38" lean-forward="true" selection-start-line="1825" selection-start-column="38" selection-end-line="1825" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -161,7 +121,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.docker/php/Dockerfile" />
         <option value="$PROJECT_DIR$/.docker/php/php.ini" />
         <option value="$PROJECT_DIR$/.docker/config/vhosts/sf4.conf" />
         <option value="$PROJECT_DIR$/src/config/routes.yaml" />
@@ -174,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/src/Controller/DemoController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/tests/Controller/DefaultControllerTest.php" />
+        <option value="$PROJECT_DIR$/.docker/php/Dockerfile" />
       </list>
     </option>
   </component>
@@ -304,7 +264,13 @@
             <path>
               <item name="docker-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-symfony4-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-symfony4-api" type="462c0819:PsiDirectoryNode" />
+              <item name=".docker" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,12 +309,12 @@
       <updated>1542686081631</updated>
       <workItem from="1542686082709" duration="1477000" />
       <workItem from="1542689185382" duration="9724000" />
-      <workItem from="1542707086995" duration="813000" />
+      <workItem from="1542707086995" duration="1043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12014000" />
+    <option name="totallyTimeSpent" value="12244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
@@ -406,24 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.docker/php/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="1921" column="23" selection-start-line="1921" selection-start-column="23" selection-end-line="1921" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.docker/php/php-fpm-pool.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.docker/php/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -466,13 +418,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/packages/twig.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.docker/config/vhosts/sf4.conf">
       <provider selected="true" editor-type-id="text-editor">
@@ -566,11 +511,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/Controller/DefaultControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        <state relative-caret-position="380">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
             <element signature="e#62#98#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.docker/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="1825" column="38" lean-forward="true" selection-start-line="1825" selection-start-column="38" selection-end-line="1825" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.docker/php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
         </state>
       </provider>
     </entry>
