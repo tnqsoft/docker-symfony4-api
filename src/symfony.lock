@@ -1,4 +1,22 @@
 {
+    "behat/gherkin": {
+        "version": "v4.5.1"
+    },
+    "codeception/codeception": {
+        "version": "2.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.3",
+            "ref": "d2a29c0abee586aff913fd45fae1f59b669f4cbe"
+        }
+    },
+    "codeception/phpunit-wrapper": {
+        "version": "7.1.4"
+    },
+    "codeception/stub": {
+        "version": "2.0.4"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -80,6 +98,9 @@
     "exsyst/swagger": {
         "version": "v0.4.1"
     },
+    "facebook/webdriver": {
+        "version": "1.6.0"
+    },
     "friendsofsymfony/rest-bundle": {
         "version": "2.2",
         "recipe": {
@@ -88,6 +109,15 @@
             "version": "2.2",
             "ref": "258300d52be6ad59b32a888d5ddafbf9638540ff"
         }
+    },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
@@ -158,6 +188,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.0.2"
     },
@@ -218,6 +251,9 @@
     "symfony/asset": {
         "version": "v4.1.7"
     },
+    "symfony/browser-kit": {
+        "version": "v4.1.8"
+    },
     "symfony/cache": {
         "version": "v4.1.7"
     },
@@ -233,6 +269,9 @@
             "ref": "181d766db0eb468f41337f9b2d9d5b61ba1ee441"
         }
     },
+    "symfony/css-selector": {
+        "version": "v4.1.8"
+    },
     "symfony/debug": {
         "version": "v4.1.7"
     },
@@ -241,6 +280,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v4.1.7"
+    },
+    "symfony/dom-crawler": {
+        "version": "v4.1.8"
     },
     "symfony/dotenv": {
         "version": "v4.1.7"
@@ -289,6 +331,9 @@
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"
+    },
+    "symfony/process": {
+        "version": "v4.1.8"
     },
     "symfony/property-info": {
         "version": "v4.1.7"

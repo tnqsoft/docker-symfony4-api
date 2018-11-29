@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78c01999-0999-4c86-a003-a49afa9ee913" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/docker-symfony4-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docker-symfony4-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +23,9 @@
     <session id="1347547882">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="4" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -28,28 +33,31 @@
           <entry key="Dockerfile" value="6" />
           <entry key="conf" value="5" />
           <entry key="env" value="1" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
+          <entry key="html" value="1" />
           <entry key="ini" value="4" />
-          <entry key="json" value="7" />
-          <entry key="md" value="7" />
-          <entry key="php" value="10" />
+          <entry key="json" value="8" />
+          <entry key="lock" value="1" />
+          <entry key="md" value="9" />
+          <entry key="php" value="12" />
           <entry key="twig" value="1" />
           <entry key="yaml" value="25" />
-          <entry key="yml" value="6" />
+          <entry key="yml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
           <entry key="Dockerfile" value="6" />
+          <entry key="HTML" value="1" />
           <entry key="Ini" value="4" />
-          <entry key="JSON" value="7" />
-          <entry key="Markdown" value="7" />
-          <entry key="PHP" value="10" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JSON" value="8" />
+          <entry key="Markdown" value="9" />
+          <entry key="PHP" value="12" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="SmartyConfig" value="5" />
           <entry key="Twig" value="1" />
-          <entry key="YAML" value="31" />
+          <entry key="YAML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,33 +66,42 @@
           <entry key="conf" value="8" />
           <entry key="gitignore" value="3" />
           <entry key="ini" value="15" />
-          <entry key="md" value="226" />
-          <entry key="php" value="281" />
+          <entry key="md" value="518" />
+          <entry key="php" value="282" />
           <entry key="yaml" value="24" />
-          <entry key="yml" value="36" />
+          <entry key="yml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="2" />
           <entry key="Ini" value="15" />
-          <entry key="Markdown" value="226" />
-          <entry key="PHP" value="281" />
+          <entry key="Markdown" value="518" />
+          <entry key="PHP" value="282" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SmartyConfig" value="8" />
-          <entry key="YAML" value="60" />
+          <entry key="YAML" value="68" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codeception.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="171">
-                <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+              <first_editor relative-caret-position="815">
+                <caret line="75" column="65" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
               </first_editor>
               <second_editor />
             </state>
@@ -119,6 +136,8 @@
         <option value="$PROJECT_DIR$/src/src/Controller/DemoController.php" />
         <option value="$PROJECT_DIR$/src/tests/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/.docker/php/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/tests/acceptance/FirstCest.php" />
+        <option value="$PROJECT_DIR$/src/codeception.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -224,6 +243,16 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/src/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/src/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/process" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -240,6 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,19 +280,25 @@
             <path>
               <item name="docker-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-symfony4-api" type="462c0819:PsiDirectoryNode" />
-              <item name=".docker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-symfony4-api" type="462c0819:PsiDirectoryNode" />
-              <item name=".docker" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-symfony4-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,18 +332,21 @@
       <workItem from="1542686082709" duration="1477000" />
       <workItem from="1542689185382" duration="9724000" />
       <workItem from="1542707086995" duration="1130000" />
-      <workItem from="1542708265030" duration="103000" />
+      <workItem from="1542708265030" duration="156000" />
+      <workItem from="1543217054883" duration="1306000" />
+      <workItem from="1543458736273" duration="2356000" />
+      <workItem from="1543464544403" duration="2962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12434000" />
+    <option name="totallyTimeSpent" value="19111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16915688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17395945" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,9 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding>
-            <element signature="e#7#22#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,9 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding>
-            <element signature="e#34#74#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,16 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#34#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -490,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#62#98#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,11 +537,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/symfony.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/acceptance.suite.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/_output/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/acceptance/FirstCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/_output/App.Tests.FirstCest.frontpageWorks.fail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="171">
-            <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <first_editor relative-caret-position="815">
+            <caret line="75" column="65" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>

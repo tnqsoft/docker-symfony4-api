@@ -38,9 +38,39 @@ docker-compose exec php composer require phpstan/phpstan --dev
 docker-compose exec php composer require squizlabs/php_codesniffer --dev  
 ```
 
+##Install project
+```
+composer install
+
+# Or update latest version for libraries
+composer update
+```
+
 ##For Unit Test
 ```
 docker-compose exec php composer require --dev phpunit/phpunit symfony/browser-kit symfony/css-selector
 
 docker-compose exec php phpunit -c sf4/src/
+
+php vendor/bin/phpunit
 ```
+
+##Automation Test With Codecept
+- https://codeception.com/quickstart
+```
+# Generator test file
+php vendor/bin/codecept generate:cest acceptance First
+
+# Run test
+php vendor/bin/codecept run --steps
+# more detail
+php vendor/bin/codecept run acceptance --steps
+
+# Report
+php vendor/bin/codecept run --steps --xml --html
+
+# Code Coverage
+php vendor/bin/codecept run --coverage --xml --html
+```
+
+- More information https://codeception.com/docs/02-GettingStarted

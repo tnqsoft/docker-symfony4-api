@@ -100,6 +100,16 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/src/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/src/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/src/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/process" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
