@@ -14,11 +14,11 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Swagger\Annotations as SWG;
 
 /**
- * DemoController.
+ * UserController.
  *
- * @Route("/api/demo", name="demo_link.")
+ * @Route("/api/user", name="user_api.")
  */
-class DemoController extends AbstractController
+class UserController extends AbstractController
 {
     /**
      * @var EntityManagerInterface
@@ -32,26 +32,22 @@ class DemoController extends AbstractController
     }
 
     /**
-     * @Rest\Get("/{name}", name="say_hello")
+     * @Rest\Get("/me", name="user_me")
      * @SWG\Get(
-     *     path="/api/demo/{name}",
-     *     description="Get List",
-     *     operationId="demo_say_hello",
-     *     tags={"Demo"},
+     *     path="/api/user/me",
+     *     description="Get current user",
+     *     operationId="api_user_me",
+     *     tags={"User"},
      *     @SWG\Response(
      *         response=200,
-     *         description="Demo say hello"
+     *         description="Get current user"
      *     )
      * )
      *
-     * @param string $name
-     *
      * @return string
      */
-    public function get(string $name)
+    public function getCurrentUser()
     {
-        return [
-            'say' => 'Hello ' . $name
-        ];
+        return $this->getUser();
     }
 }

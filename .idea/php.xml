@@ -44,7 +44,6 @@
       <path value="$PROJECT_DIR$/src/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/templating" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/negotiation" />
       <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
@@ -110,6 +109,18 @@
       <path value="$PROJECT_DIR$/src/vendor/behat/gherkin" />
       <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/src/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/src/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/src/vendor/phpcollection/phpcollection" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

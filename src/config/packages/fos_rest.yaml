@@ -17,8 +17,8 @@ fos_rest:
   format_listener:
     enabled: true
     rules:
-    - { path: '^/', priorities: ['json'], fallback_format: json }
-    - { path: '^/example-html', priorities: ['html'], fallback_format: html }
+    - { path: '^/api', priorities: ['json'], fallback_format: json }
+    - { path: '^/', priorities: ['html'], fallback_format: html }
   body_listener:
     decoders:
       json: fos_rest.decoder.json

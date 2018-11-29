@@ -35,7 +35,11 @@ docker-compose exec php composer require doctrine/doctrine-fixtures-bundle --dev
 docker-compose exec php composer require edgedesign/phpqa --dev 
 docker-compose exec php composer require liip/functional-test-bundle --dev 
 docker-compose exec php composer require phpstan/phpstan --dev  
-docker-compose exec php composer require squizlabs/php_codesniffer --dev  
+docker-compose exec php composer require squizlabs/php_codesniffer --dev
+
+docker-compose up
+docker-compose up -d
+docker-compose down  
 ```
 
 ##Install project
@@ -44,6 +48,18 @@ composer install
 
 # Or update latest version for libraries
 composer update
+```
+
+##Generate RSA Key Pem
+```
+mkdir config/jwt
+openssl genrsa -out config/jwt/private.pem -aes256 4096
+openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
+```
+
+##Test Login
+```
+curl -X POST -H "Content-Type: application/json" http://localhost:8000/login_check -d '{"username":"admin","password":"123456"}'
 ```
 
 ##For Unit Test
@@ -74,3 +90,6 @@ php vendor/bin/codecept run --coverage --xml --html
 ```
 
 - More information https://codeception.com/docs/02-GettingStarted
+
+##JWT
+- https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#usage
