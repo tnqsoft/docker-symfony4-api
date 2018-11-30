@@ -1,0 +1,16 @@
+App\Entity\User:
+  exclusion_policy: ALL
+  exclude: true
+  properties:
+    id:
+      type: integer
+      expose: true
+#      serialized_name: id
+    username:
+      type: string
+    password:
+      type: string
+    isActive:
+      type: boolean
+    salt:
+      type: string

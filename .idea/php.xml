@@ -121,6 +121,9 @@
       <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/src/vendor/jms/parser-lib" />
       <path value="$PROJECT_DIR$/src/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/monolog/monolog" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

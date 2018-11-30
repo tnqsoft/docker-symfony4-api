@@ -2,17 +2,24 @@
 
 namespace App\Controller;
 
-use Doctrine\ORM\EntityManagerInterface;
-use FOS\RestBundle\Controller\Annotations\Route;
-use FOS\RestBundle\Controller\Annotations as Rest;
-use Nelmio\ApiDocBundle\Annotation\Model;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use Swagger\Annotations as SWG;
 
+use Doctrine\ORM\EntityManagerInterface;
+
+use FOS\RestBundle\Controller\Annotations\Route;
+use FOS\RestBundle\Controller\Annotations as Rest;
+use FOS\RestBundle\Controller\Annotations\Version;
+
+use Swagger\Annotations as SWG;
+use Nelmio\ApiDocBundle\Annotation\Model;
+use Nelmio\ApiDocBundle\Annotation\Security;
+
+use App\Entity\User;
 /**
  * UserController.
  *
@@ -33,21 +40,19 @@ class UserController extends AbstractController
 
     /**
      * @Rest\Get("/me", name="user_me")
-     * @SWG\Get(
-     *     path="/api/user/me",
-     *     description="Get current user",
-     *     operationId="api_user_me",
-     *     tags={"User"},
-     *     @SWG\Response(
-     *         response=200,
-     *         description="Get current user"
-     *     )
+     * @SWG\Response(
+     *     response=200,
+     *     description="Returns the current user",
+     *     @SWG\Schema(ref=@Model(type=User::class))
      * )
+     * @SWG\Tag(name="User")
+     * @Security(name="Bearer")
      *
      * @return string
      */
     public function getCurrentUser()
     {
+        echo get_class($this->getUser());
         return $this->getUser();
     }
 }
