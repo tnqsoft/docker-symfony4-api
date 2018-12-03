@@ -21,6 +21,7 @@ fos_rest:
     enabled: true
     rules:
     - { path: '^/api', priorities: ['json'], fallback_format: json }
+    - { path: '^/login_check', priorities: ['json'], fallback_format: json }
     - { path: '^/', priorities: ['html'], fallback_format: html }
   body_listener:
     decoders:
