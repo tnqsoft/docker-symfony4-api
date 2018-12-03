@@ -23,7 +23,7 @@ class DefaultController
      *     path="/",
      *     description="Example API response as HTML",
      *     operationId="example_html",
-     *     tags={"Example"},
+     *     tags={"Nagios"},
      *     @SWG\Response(
      *         response=200,
      *         description="Just for demo"
