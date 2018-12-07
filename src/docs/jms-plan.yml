@@ -71,3 +71,10 @@ Vendor\MyBundle\Model\ClassName:
     pre_serialize: [foo, bar]
     post_serialize: [foo, bar]
     post_deserialize: [foo, bar]
+
+
+
+  /**
+  * @JMS\VirtualProperty
+  * @JMS\SerializedName("someField")
+  */

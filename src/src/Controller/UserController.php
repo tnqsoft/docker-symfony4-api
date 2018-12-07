@@ -18,6 +18,7 @@ use FOS\RestBundle\Controller\Annotations\Version;
 use Swagger\Annotations as SWG;
 use Nelmio\ApiDocBundle\Annotation\Model;
 use Nelmio\ApiDocBundle\Annotation\Security;
+use JMS\Serializer\SerializationContext;
 
 use App\Entity\User;
 /**
@@ -52,7 +53,9 @@ class UserController extends AbstractController
      */
     public function getCurrentUser()
     {
-        echo get_class($this->getUser());
-        return $this->getUser();
+        $context = SerializationContext::create()->setGroups(['list']);
+        return $this->get('jms_serializer')->serialize($this->getUser(), 'json', $context);
+
+//        return $this->getUser();
     }
 }
