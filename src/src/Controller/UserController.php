@@ -18,7 +18,16 @@ use FOS\RestBundle\Controller\Annotations\Version;
 use Swagger\Annotations as SWG;
 use Nelmio\ApiDocBundle\Annotation\Model;
 use Nelmio\ApiDocBundle\Annotation\Security;
-use JMS\Serializer\SerializationContext;
+
+use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Serializer\Encoder\XmlEncoder;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
+use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
+use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
+use Doctrine\Common\Annotations\AnnotationReader;
+use Symfony\Component\Serializer\Mapping\Loader\YamlFileLoader;
 
 use App\Entity\User;
 /**
@@ -50,12 +59,24 @@ class UserController extends AbstractController
      * @Security(name="Bearer")
      *
      * @return string
+     * @throws \Doctrine\Common\Annotations\AnnotationException
      */
     public function getCurrentUser()
     {
-        $context = SerializationContext::create()->setGroups(['list']);
-        return $this->get('jms_serializer')->serialize($this->getUser(), 'json', $context);
+        $classMetadataFactory = new ClassMetadataFactory(new YamlFileLoader(__DIR__.'/../Resources/config/serializer/User.yml'));
+        $normalizer = new ObjectNormalizer($classMetadataFactory);
+        $serializer = new Serializer(array($normalizer));
 
+        return $serializer->normalize(
+            $this->getUser(),
+            null,
+//            array('attributes' => array('id', 'username'))
+            [
+                'groups' => [
+                    'list'
+                ]
+            ]
+        );
 //        return $this->getUser();
     }
 }
