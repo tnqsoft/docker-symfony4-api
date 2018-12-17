@@ -14,6 +14,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use FOS\RestBundle\Controller\Annotations\Route;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\Annotations\Version;
+use FOS\RestBundle\Controller\Annotations\View;
 
 use Swagger\Annotations as SWG;
 use Nelmio\ApiDocBundle\Annotation\Model;
@@ -53,30 +54,18 @@ class UserController extends AbstractController
      * @SWG\Response(
      *     response=200,
      *     description="Returns the current user",
-     *     @SWG\Schema(ref=@Model(type=User::class))
+     *     @SWG\Schema(ref=@Model(type=User::class, groups={"detail"}))
+     * )
+     * @View(
+     *     serializerGroups={"detail"}
      * )
      * @SWG\Tag(name="User")
      * @Security(name="Bearer")
      *
      * @return string
-     * @throws \Doctrine\Common\Annotations\AnnotationException
      */
     public function getCurrentUser()
     {
-        $classMetadataFactory = new ClassMetadataFactory(new YamlFileLoader(__DIR__.'/../Resources/config/serializer/User.yml'));
-        $normalizer = new ObjectNormalizer($classMetadataFactory);
-        $serializer = new Serializer(array($normalizer));
-
-        return $serializer->normalize(
-            $this->getUser(),
-            null,
-//            array('attributes' => array('id', 'username'))
-            [
-                'groups' => [
-                    'list'
-                ]
-            ]
-        );
-//        return $this->getUser();
+        return $this->getUser();
     }
 }

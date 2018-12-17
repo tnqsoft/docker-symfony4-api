@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Serializer\Annotation\DiscriminatorMap;
 
 /**
  * @ORM\Table(name="users")
@@ -15,11 +17,13 @@ class User implements UserInterface
      * @ORM\Column(type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @Groups({"list", "detail"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=25, unique=true)
+     * @Groups({"list", "detail"})
      */
     private $username;
 
@@ -30,8 +34,20 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(name="is_active", type="boolean")
+     * @Groups({"list", "detail"})
      */
     private $isActive;
+
+    /**
+     * @var string
+     */
+    private $salt;
+
+    /**
+     * @var string[]
+     * @Groups({"detail"})
+     */
+    private $roles = ['ROLE_USER'];
 
     public function __construct($username)
     {
@@ -51,7 +67,7 @@ class User implements UserInterface
 
     public function getSalt()
     {
-        return null;
+        return $this->salt;
     }
 
     public function getPassword()
@@ -66,7 +82,7 @@ class User implements UserInterface
 
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        return $this->roles;
     }
 
     public function eraseCredentials()
